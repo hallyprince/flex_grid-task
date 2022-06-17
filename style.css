@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    padding: auto;
+    width: 400%;
+}
+
+.container-1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 12px 20px;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 70%;
+    border-radius: 9px 0 0 9px;
+}
+
+.container-1 h3 {
+    color: hsl(0, 0%, 95%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Big Shoulders display";
+    font-weight: 700;
+}
+
+.container-1 p {
+    padding: 10px 0 50px 0;
+    line-height: 25px;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+.container-2 {
+    background-color: hsl(184, 100%, 22%);
+    padding: 12px 20px;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 70%;
+}
+
+.container-2 h3 {
+    color: hsl(0, 0%, 95%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Big Shoulders display";
+    font-weight: 700;
+}
+
+.container-2 p {
+    padding: 10px 0 30px 0;
+    line-height: 25px;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+.container-3 {
+    background-color: hsl(179, 100%, 13%);
+    padding: 2px;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: 70%;
+    padding: 12px 20px;
+    border-radius: 0 9px 9px 0;
+}
+
+.container-3 h3 {
+    color: hsl(0, 0%, 95%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Big Shoulders display";
+    font-weight: 700;
+}
+
+.container-3 p {
+    padding: 10px 0 50px 0;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.top-container button {
+    padding: 10px 15px;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: white;
+    border-radius: 2rem;
+    color: red;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-container button:hover {
+    padding: 15px;
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    background-color: transparent;
+    border-radius: 2rem;
+    color: white;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-a {
+    grid-area: a;
+    background-color: black;
+}
+
+.item-b {
+    grid-area: b;
+    background-color: blue;
+}
+
+.item-c {
+    grid-area: c;
+    background-color: yellow;
+}
+
+.item-d {
+    grid-area: d;
+    background-color: red;
+}
+
+.item-e {
+    grid-area: e;
+    background-color: aqua;
+}
+
+.grid-container {
+    width: 50%;
+    display: grid;
+    margin: 8rem auto;
+    gap: 10px;
+    grid-template-areas: "a a b" "a a b " "c d d" "c e e";
+}
+
+.grid-container .items {
+    width: 100%;
+    padding: 4rem 6rem;
+}
